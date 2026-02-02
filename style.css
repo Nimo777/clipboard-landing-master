@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+      text-align: center;
+    color: hsl(210, 10%, 33%);
+    line-height: 1.6;
+    
+
+    
+    
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+}
+
+.header {
+     background: url(images/bg-header-desktop.png);
+     background-position: center; 
+      background-size: cover; 
+    padding: 100px 20px;
+    
+    
+}
+
+.logo {
+    margin-bottom: 40px;
+}
+
+.buttons {
+    margin-top: 30px;
+} 
+
+.btn {
+    
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor:pointer;
+    
+}
+.btn:hover
+{
+    transform: scale(1.1);
+}
+
+.ios {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.mac {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.snippets,
+.access,
+.workflow,
+.download {
+     padding: 80px 20px; 
+}
+
+.snippets-content {
+    display: flex;
+     align-items: center; 
+    gap: 80px;
+    margin-top: 60px;
+}
+
+.snippets-content img {
+    width: 50%;
+ 
+}
+
+.features {
+    text-align: left; 
+}
+
+.features div {
+    margin-bottom: 40px;
+}
+
+.access img {
+    margin-top: 60px;
+    width: 70%;
+}
+
+.tools {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.tools div {
+    flex: 1;
+}
+
+.companies {
+    display: flex;
+     justify-content: space-around;  
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.footer {
+    background-color: hsl(220, 18%, 97%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.footer ul {
+     list-style: none; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 100px;
+    
+}
+
+.footer a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    opacity: 0.7;
+}
+
+.social img {
+    margin: 20px;
+    cursor: pointer;
+}
+@media (max-width: 480px) {
+
+    body {
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .header {
+        padding: 60px 15px;
+        background: url(images/bg-header-mobile.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* snippets */
+    .snippets-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .snippets-content img {
+        width: 100%;
+        
+    }
+
+    .features {
+        text-align: center;
+    }
+
+    /* access */
+    .access img {
+        width: 100%;
+
+        }
+        
+
+    /* workflow */
+
+    
+    .tools {
+        flex-direction: column;
+        gap: 40px;
+        
+    }
+
+    /* ✅ FIX الشركات */
+    .companies {
+        flex-direction: column;
+        gap: 60px;
+        /* padding: 60px 20px; */
+    }
+
+    .companies img {
+        width: 150px;
+        
+    }
+
+    /* footer */
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer ul {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* buttons */
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
